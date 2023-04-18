@@ -13,19 +13,37 @@
         color: white;
       }
 
-      #logo {
-        font-weight: bold;
-        font-size: 1em;
+      #logo-container {
         position: absolute;
         top: 0;
         left: 0;
         margin: 0.5em;
+        display: flex;
+        align-items: center;
+      }
+
+      #logo {
+        font-weight: bold;
+        font-size: 1em;
+        margin-right: 1em;
+      }
+
+      #image-container {
+        width: 50%;
+      }
+
+      #image-container img {
+        width: 100%;
       }
     </style>
   </head>
   <body>
-    <img src="Src.gif">
-    <div id="logo"></div>
+    <div id="logo-container">
+      <div id="logo"></div>
+      <div id="image-container">
+        <img src="Src.gif">
+      </div>
+    </div>
     <script>
       const logo = document.getElementById("logo");
       const text = "$/ %device-disconnected//: ";
